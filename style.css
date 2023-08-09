@@ -1,0 +1,261 @@
+
+body{
+    font-family: sans-serif;  
+    margin: 0;
+    background-color: aliceblue;
+    overflow-y: scroll;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+    background-color: rgb(49, 51, 165);
+    align-items: center;
+    padding: 5px;
+    padding-right: 425px;
+}
+
+.logo img{
+    height: 55px;
+    margin-right: 10px;
+    padding-left: 650px;
+}
+
+nav a{
+    font-weight: 600; 
+    padding-right: 10px; 
+}
+
+nav a:hover{
+    color: rgba(199, 219, 255, 0.836);
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+nav input{
+    padding: 4px 15px;
+    border: none; 
+    margin-top: 5px; 
+    margin-right: 40px; 
+    margin-left: 40px;
+    font-size: 15px; 
+    border-radius: 20px; 
+    outline: none; 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 85vmin;
+    position: absolute;
+    transform: translate(50%, -50%);
+    top: 45%; 
+    left: 10%; 
+    overflow: hidden;  
+    border: 20px solid #ffffff; 
+    border-radius: 9px; 
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0); 
+    }
+
+    25%{
+        transform: translateX(0); 
+    }
+
+    30%{
+        transform: translateX(-100%); 
+    }
+
+    50%{
+        transform: translateX(-100%); 
+    }
+
+    55%{
+     transform: translateX(-200%); 
+    }
+
+    75%{
+        transform: translateX(-200%); 
+    }
+
+    80%{
+        transform: translateX(-300%); 
+    }
+
+    100%{
+        transform: translateX(-300%); 
+    }
+}
+
+img{
+ width: 100%;
+}
+
+#btn-direccion{
+    font-size: 20px;
+    width: 40%;
+    position: relative; 
+    top: 660px;
+    left: 600px;
+    color: white;
+    text-decoration: none;
+}
+  
+.btn{
+    width: 100%;
+    background:#3549bb;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 7 5px;
+    border-radius: 5px;
+    border-bottom: #3549bb;
+    border-top: #3549bb;
+    border-left: #3549bb;
+    border-right: #3549bb;
+}
+
+.whatsapp_float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+  .whatsapp-icon {
+    margin-top: 16px;
+  }
+
+  /* for mobile */
+  @media screen and (max-width: 767px){
+    .whatsapp-icon {
+      margin-top: 10px;
+    }
+    .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+    }
+  }
+
+.slider {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;  
+    position:relative;
+    top: 1100px;
+    left: 25px;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(200px * 20);
+    border: #999;
+}
+
+.slider .slide {
+    width: 200px;
+}
+
+.slider .slide img {
+    width: 200px;
+  height: 100px;
+  padding: 0.5px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-200px * 7));
+    }
+}
+
+h1{
+    font-family: sans-serif;
+    color: #3549bb;
+    font-size: 20px;
+    text-align: center;
+    position: relative; 
+    top: 950px; 
+}
+
+.contenedor-otro{
+    width: 100%; 
+    height:1500px; 
+    background-color: aliceblue;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+}
+
+.content-section{
+    display: flex; 
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+}
+
+.content-section .card{
+    flex: 1; 
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2); 
+}
+ 
+.content-section .card img{
+    width: 100%; 
+    height: auto; 
+}
+
+.content-section .card h2{
+    margin:15px 0px; 
+    font-size: 28px; 
+    color:  #3549bb;
+
+}
